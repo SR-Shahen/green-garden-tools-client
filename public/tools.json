@@ -1,0 +1,38 @@
+[
+    {
+        "name": "khunta",
+        "price": 50,
+        "description": "eita onek valo kudail, eita diye onek valo mati kata jay ami onek din dhore eita diya mati katchi",
+        "img": "https://i.ibb.co/rb4MxBx/grafting.jpg"
+    },
+    {
+        "name": "flat-shabol",
+        "price": 50,
+        "description": "eita onek valo kudail, eita diye onek valo mati kata jay ami onek din dhore eita diya mati katchi",
+        "img": "https://i.ibb.co/NyV1YzG/short-flat-shovel.jpg"
+    },
+    {
+        "name": "fruit-picking-shears",
+        "price": 50,
+        "description": "eita onek valo kudail, eita diye onek valo mati kata jay ami onek din dhore eita diya mati katchi",
+        "img": "https://i.ibb.co/vHj7qGp/fruit-picking-shears.jpg"
+    },
+    {
+        "name": "mini-saw",
+        "price": 50,
+        "description": "eita onek valo kudail, eita diye onek valo mati kata jay ami onek din dhore eita diya mati katchi",
+        "img": "https://i.ibb.co/BVg4YQB/mini-saw.jpg"
+    },
+    {
+        "name": "fork-hoe",
+        "price": 50,
+        "description": "eita onek valo kudail, eita diye onek valo mati kata jay ami onek din dhore eita diya mati katchi",
+        "img": "https://i.ibb.co/tKctm0K/fork-hoe.jpg"
+    },
+    {
+        "name": "pruning-shears",
+        "price": 50,
+        "description": "eita onek valo kudail, eita diye onek valo mati kata jay ami onek din dhore eita diya mati katchi",
+        "img": "https://i.ibb.co/hLStFM8/pruning-shears.jpg"
+    }
+]
