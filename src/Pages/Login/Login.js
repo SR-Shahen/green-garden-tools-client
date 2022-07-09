@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
+import SocialLogin from './SocialLogin';
 
 
 const Login = () => {
@@ -98,7 +99,7 @@ const Login = () => {
                     </form>
                     <p className='mt-2'>New to Green Garden? <Link className='text-primary' to='/signup'>Create an account</Link></p>
                     <div className="divider">OR</div>
-
+                    <SocialLogin></SocialLogin>
                 </div>
             </div>
 

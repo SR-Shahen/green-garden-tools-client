@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import Loading from '../Shared/Loading';
+import SocialLogin from './SocialLogin';
 
 const SignUp = () => {
     const [
@@ -113,8 +114,7 @@ const SignUp = () => {
                     </form>
                     <p className='mt-2'>Already have an account? <Link className='text-primary' to='/login'>Please login</Link></p>
                     <div className="divider">OR</div>
-
-
+                    <SocialLogin></SocialLogin>
                 </div>
             </div>
 
