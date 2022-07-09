@@ -29,7 +29,7 @@ const Reviews = () => {
         }
     ];
     return (
-        <section className='pt-10'>
+        <section className='pt-10 '>
             <div className='mt-14'>
                 <h1 className='text-4xl font-bold text-center'>What Our Customers Says</h1>
             </div>
