@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from './Banner';
+import BusinessSummary from './BusinessSummary';
 import Contact from './Contact';
 import Reviews from './Reviews';
 import Tools from './Tools';
@@ -10,6 +11,7 @@ const Home = () => {
             <h1 className='text-3xl text-center font-medium text-teal-400'>Welcome to Green Garden Tools</h1>
             <Banner></Banner>
             <Tools></Tools>
+            <BusinessSummary></BusinessSummary>
             <Reviews></Reviews>
             <Contact></Contact>
         </div>
