@@ -10,7 +10,6 @@ const Tools = () => {
     }, [])
     return (
         <div>
-            <h1>tools quantity:{tools.length}</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 gap-10'>
                 {
                     tools.map(tool => <Tool
