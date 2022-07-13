@@ -4,12 +4,14 @@ import AddReview from './Pages/Dashboard/AddReview';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrder from './Pages/Dashboard/MyOrder';
 import MyProfile from './Pages/Dashboard/MyProfile';
-import User from './Pages/Dashboard/User';
+// import User from './Pages/Dashboard/User';
 import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
 import Products from './Pages/Products/Products';
+import Purchase from './Pages/Purchase/Purchase';
+// import Purchase from './Pages/Purchase/Purchase';
 
 
 
@@ -26,6 +28,9 @@ function App() {
           <Products></Products>
         </RequireAuth>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/purchase/:id' element={<RequireAuth>
+          <Purchase></Purchase>
+        </RequireAuth>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='/dashboard' element={<RequireAuth>
           <Dashboard></Dashboard>

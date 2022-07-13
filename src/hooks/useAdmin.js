@@ -5,7 +5,7 @@ const useAdmin = user => {
     useEffect(() => {
         const email = user?.email;
         if (email) {
-            fetch(`https://radiant-shelf-47828.herokuapp.com/admin/${email}`, {
+            fetch(``, {
                 method: "GET",
                 headers: {
                     'content-type': 'application/json'
