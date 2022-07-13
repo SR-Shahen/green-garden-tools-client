@@ -32,7 +32,7 @@ const Purchase = () => {
         }
         const data = { user, customer, tool, address, phone, order }
         console.log(data);
-        fetch('https://radiant-shelf-47828.herokuapp.com/order', {
+        fetch('http://localhost:5000/order', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
