@@ -11,7 +11,8 @@ import RequireAuth from './Pages/Login/RequireAuth';
 import SignUp from './Pages/Login/SignUp';
 import Products from './Pages/Products/Products';
 import Purchase from './Pages/Purchase/Purchase';
-// import Purchase from './Pages/Purchase/Purchase';
+
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -45,6 +46,7 @@ function App() {
         </Route>
       </Routes>
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

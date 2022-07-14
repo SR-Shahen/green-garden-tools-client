@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import DeleteModal from './DeleteModal';
 
 const MyOrder = () => {
     const [user] = useAuthState(auth);
@@ -10,7 +11,7 @@ const MyOrder = () => {
     const [remove, setRemove] = useState(null);
     useEffect(() => {
         if (user) {
-            fetch(``)
+            fetch(`http://localhost:5000/order?customer=${user.email}`)
                 .then(res => res.json())
                 .then(data => {
                     setOrders(data)
@@ -51,9 +52,9 @@ const MyOrder = () => {
                     </tbody>
                 </table>
             </div>
-            {/* {
+            {
                 remove && <DeleteModal remove={remove}></DeleteModal>
-            } */}
+            }
         </div>
     );
 };

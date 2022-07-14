@@ -1,6 +1,7 @@
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../firebase.init';
 
 const AddReview = () => {
@@ -9,10 +10,12 @@ const AddReview = () => {
         event.preventDefault();
         const name = event.target.name.value;
         const rating = event.target.rating.value;
+        const photoUrl = event.target.photoUrl.value;
+        const location = event.target.location.value;
         const description = event.target.description.value;
-        const review = { name, rating, description };
+        const review = { name, rating, description, location, photoUrl };
         console.log(review);
-        fetch('', {
+        fetch('http://localhost:5000/review', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'
@@ -36,8 +39,12 @@ const AddReview = () => {
                     <form onSubmit={handelAddReview}>
                         <input type="text" name='name' disabled value={user?.displayName} className="input my-2 input-bordered w-full max-w-xs" />
                         <input type="text" name='rating' placeholder="review rating" className="input my-2 input-bordered w-full max-w-xs" />
+                        {/* <input type="file" name='photoUrl' placeholder="url link" className="input my-2 input-bordered w-full max-w-xs" /> */}
+                        <input type="url" name='photoUrl' placeholder="url link" className="input my-2 input-bordered w-full max-w-xs" />
+                        <input type="text" name='location' placeholder="Enter your location" className="input my-2 input-bordered w-full max-w-xs" />
                         <textarea name='description' className="textarea textarea-bordered w-full max-w-xs" placeholder="Review"></textarea>
                         <input type="submit" value="Review" className=" btn my-2 input-bordered w-full max-w-xs" />
+                        {/* <input type="file" name="file" id="" /> */}
                     </form>
                 </div>
             </div>
