@@ -3,10 +3,11 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useQuery } from 'react-query';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading'
+import MakeAdmin from './MakeAdmin'
 
 const User = () => {
     // const [user] = useAuthState(auth);
-    const { data: users, loading, refetch } = useQuery('users', () => fetch('').then(res => res.json()))
+    const { data: users, loading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user').then(res => res.json()))
     if (loading) {
         return <Loading></Loading>
     }
@@ -28,14 +29,14 @@ const User = () => {
                         </tr>
                     </thead>
                     <tbody>
-                        {/* {
+                        {
                             users?.map((user, index) => <MakeAdmin
                                 key={user._id}
                                 user={user}
                                 index={index}
                                 refetch={refetch}
                             ></MakeAdmin>)
-                        } */}
+                        }
 
                     </tbody>
                 </table>

@@ -43,8 +43,8 @@ function App() {
           </Route>
           <Route path='addReview' element={<AddReview></AddReview>}>
           </Route>
-          {/* <Route path='user' element={<User></User>}>
-          </Route> */}
+          <Route path='user' element={<User></User>}>
+          </Route>
 
         </Route>
       </Routes>
