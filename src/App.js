@@ -18,6 +18,7 @@ import { ToastContainer } from 'react-toastify';
 
 import Footer from './Pages/Shared/Footer';
 import Navbar from './Pages/Shared/Navbar';
+import User from './Pages/Dashboard/User';
 
 function App() {
   return (
@@ -42,6 +43,8 @@ function App() {
           </Route>
           <Route path='addReview' element={<AddReview></AddReview>}>
           </Route>
+          {/* <Route path='user' element={<User></User>}>
+          </Route> */}
 
         </Route>
       </Routes>
