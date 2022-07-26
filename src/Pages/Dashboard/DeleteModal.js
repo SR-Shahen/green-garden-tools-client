@@ -3,7 +3,7 @@ import React from 'react';
 const DeleteModal = ({ remove }) => {
     const { tool, _id } = remove;
     const deleteOrder = () => {
-        fetch(`http://localhost:5000/order/${_id}`, {
+        fetch(`https://green-garden-tools.herokuapp.com/order/${_id}`, {
             method: "DELETE",
             headers: {
                 'content-type': 'application/json'

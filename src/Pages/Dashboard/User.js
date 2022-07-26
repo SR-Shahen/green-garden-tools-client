@@ -7,7 +7,7 @@ import MakeAdmin from './MakeAdmin'
 
 const User = () => {
     // const [user] = useAuthState(auth);
-    const { data: users, loading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user').then(res => res.json()))
+    const { data: users, loading, refetch } = useQuery('users', () => fetch('https://green-garden-tools.herokuapp.com/user').then(res => res.json()))
     if (loading) {
         return <Loading></Loading>
     }

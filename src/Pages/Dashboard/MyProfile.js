@@ -6,9 +6,10 @@ import ProfileModal from './ProfileModal';
 const MyProfile = () => {
     const [user] = useAuthState(auth);
     const [profile, setProfile] = useState(null);
+    console.log(user.email);
     useEffect(() => {
         if (user) {
-            fetch(``)
+            fetch(`https://green-garden-tools.herokuapp.com/user/${user.email}`)
                 .then(res => res.json())
                 .then(data => setProfile(data))
         }

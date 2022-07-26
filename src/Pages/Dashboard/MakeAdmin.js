@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 const MakeAdmin = ({ user, index, refetch }) => {
     const handelMakeAdmin = () => {
-        fetch(`http://localhost:5000/user/admin/${user.email}`, {
+        fetch(`https://green-garden-tools.herokuapp.com/user/admin/${user.email}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'

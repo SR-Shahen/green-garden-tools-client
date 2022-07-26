@@ -13,7 +13,7 @@ const Purchase = () => {
     let errorMessage;
     const navigate = useNavigate();
     useEffect(() => {
-        const url = `http://localhost:5000/tool/${id}`;
+        const url = `https://green-garden-tools.herokuapp.com/tool/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setTool(data))
@@ -32,7 +32,7 @@ const Purchase = () => {
         }
         const data = { user, customer, tool, address, phone, order }
         console.log(data);
-        fetch('http://localhost:5000/order', {
+        fetch('https://green-garden-tools.herokuapp.com/order', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

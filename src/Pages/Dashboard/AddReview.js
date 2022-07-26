@@ -15,7 +15,7 @@ const AddReview = () => {
         const description = event.target.description.value;
         const review = { name, rating, description, location, photoUrl };
         console.log(review);
-        fetch('http://localhost:5000/review', {
+        fetch('https://green-garden-tools.herokuapp.com/review', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

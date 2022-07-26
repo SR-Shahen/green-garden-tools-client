@@ -11,7 +11,7 @@ const MyOrder = () => {
     const [remove, setRemove] = useState(null);
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order?customer=${user.email}`)
+            fetch(`https://green-garden-tools.herokuapp.com/order?customer=${user.email}`)
                 .then(res => res.json())
                 .then(data => {
                     setOrders(data)

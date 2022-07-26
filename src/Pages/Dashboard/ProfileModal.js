@@ -15,7 +15,7 @@ const ProfileModal = ({ profile }) => {
         const linkedin = event.target.linkedin.value;
         const education = event.target.education.value;
         const profile = { name, email, address, phone, linkedin, education };
-        fetch(``, {
+        fetch(`https://green-garden-tools.herokuapp.com/user/${profile.email}`, {
             method: "PUT",
             headers: {
                 'content-type': 'application/json'
@@ -48,9 +48,6 @@ const ProfileModal = ({ profile }) => {
                         <input type='url' name='linkedin' placeholder="Add your linkedIn profile" className="input my-2 input-bordered w-full max-w-xs" />
                         {/* <label htmlFor="profile-modal" className="btn w-full max-w-xs">submit</label> */}
                         <input type="submit" className='btn my-2 input-bordered w-full max-w-xs' value="submit" />
-                        <div className="  modal-action flex justify-center">
-
-                        </div>
                     </form>
                 </div>
             </div>
