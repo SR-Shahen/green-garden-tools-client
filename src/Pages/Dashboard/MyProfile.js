@@ -12,6 +12,7 @@ const MyProfile = () => {
             fetch(`https://green-garden-tools.herokuapp.com/user/${user.email}`)
                 .then(res => res.json())
                 .then(data => setProfile(data))
+            console.log(data);
         }
 
     }, [user, profile])
